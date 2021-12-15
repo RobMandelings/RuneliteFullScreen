@@ -26,22 +26,25 @@ package net.runelite.client.plugins.fullscreen;
 
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.runelite.client.ui.ClientUI;
+
+import javax.inject.Inject;
 
 @PluginDescriptor(
-	name = "FullScreen",
-	description = "Fullscreen mode in RuneLite.",
-	enabledByDefault = false
+        name = "FullScreen",
+        description = "Fullscreen mode in RuneLite.",
+        enabledByDefault = false
 )
-public class FullScreenPlugin extends Plugin
-{
+public class FullScreenPlugin extends Plugin {
 
-	@Override
-	protected void startUp()
-	{
-	}
+    @Inject
+    private ClientUI clientUI;
 
-	@Override
-	protected void shutDown()
-	{
-	}
+    @Override
+    protected void startUp() {
+    }
+
+    @Override
+    protected void shutDown() {
+    }
 }
